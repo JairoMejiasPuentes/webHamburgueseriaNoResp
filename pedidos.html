@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ejercicio 1 Jairo">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript">
+    <title>Pedidos Hamburguesería</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="asideImage">
+            <img class="image" src="./imagenes/logo-the-bronson-bar.png">
+            <span class="headerTitle">Somos especialistas</span>
+        </div>
+
+        <nav>
+            <div class="menu">
+                <div><a href="./index.html">Home</a></div>
+                <div><a id="menu" href="./carta.html">Nuestra Carta</a></div>
+                <div><a href="./pedidos.html">Pedidos</a></div>
+            </div>
+        </nav>
+        <marquee scrollamount="6s" direction="rigth">En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor. Una olla de algo más vaca que carnero, salpicón las más noches, duelos y quebrantos los sábados, lantejas los viernes, algún palomino de añadidura los domingos, consumían las tres partes de su hacienda ....si has visto todo esto te regalamos el pedido OOOOOOOLE!!!!!!</marquee>
+    </header>
+    <div class="data">
+        <form action="formularioHamburgueseria.php" method="post">
+            <div class="products back">
+                <div class="fs1">
+                    <div class="personalData"><label for="fname">nombre </label> <br>
+                        <input type="text" name="fname" id="fname" autocomplete="name" required><br></div>
+                    <div class="personalData"><label for="lname">apellido </label><br>
+                        <input type="text" name="lname" id="lname" autocomplete="family-name" required><br></div>
+                    <div class="personalData"><label for="address">dirección</label> <br>
+                        <input type="text" name="address" id="address" autocomplete="address-level1" required><br>
+                    </div>
+                    <div class="personalData"><label for="phoneNumber">teléfono </label> <br>
+                        <input type="tel" name="phoneNumber" id="phoneNumber" autocomplete="tel" required><br></div>
+                    <div class="personalData"><label for="email"> mail </label><br>
+                        <input type="email" name="email" id="email" autocomplete="email" required><br></div>
+                    <div></div>
+                </div>
+                <div class="fs2">
+                    <section>
+                        <div class="fieldsetContent">
+                            <div class="back">
+                                <div class="products">
+                                    <span class="nameText"> Entrantes </span>
+                                </div>
+                                <div class="cell">
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/salad.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description"> Ensalada</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product1-1" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">12 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/croquettes.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Croquetas </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product1-2" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">2 $/ud</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/mozzarella.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Mozzarella stick</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product1-3" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">4 $</span> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/fries.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Patatas Fritas</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product1-4" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">12 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="back">
+                                <div class="products">
+                                    <span class="nameText"> Hamburguesas </span>
+                                </div>
+                                <div class="cell">
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/krustyBurguer.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Krusty Burguer</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product2-1" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">12 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/cangreburguer.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Cangreburguer</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product2-2" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">20 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/mc-pollo.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Mc Polla</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product2-3" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">18 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery"
+                                            src="./imagenes/c2e11e3e-d1a6-4cee-a127-7ebd6af54136_1080x943_App_Bundles_HM.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Happy Shit</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product2-4" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">9,99 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="fieldsetContent">
+                            <div class="back">
+                                <div class="products">
+                                    <span class="nameText"> Bebidas </span>
+                                </div>
+                                <div class="cell">
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/indice.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description"> Coca Cola</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product3-1" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">30 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/fanta-2020-.svg">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Fanta</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product3-2" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">30 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/estrella.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Cerveza</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input name="product3-3" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">1 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/lanjaron.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">agua</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product3-4" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">12 $</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="back">
+                                <div class="products">
+                                    <span class="nameText"> Postre </span>
+                                </div>
+                                <div class="cell">
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/brownie.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description"> Brownie</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product4-1" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">12 $</span></td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/danonino.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Danonino </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product4-2" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">5 $</span></td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/iceCream.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">Helado</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product4-3" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">4 $</span></td>
+                                            </tr>
+
+                                        </table>
+                                    </div>
+                                    <div class="menuproducts">
+                                        <img class="imgmenu-delivery" src="./imagenes/chupa.png">
+                                        <table>
+                                            <tr>
+                                                <td><span class="description">ChupaChups</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><input name="product4-4" class="cuantity" type="number" value="0"
+                                                        min="0" max="10"><span class="price">22 $</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                </div>
+                <div class="controls">
+                    <div class="conditions"><br>
+                        <div>Soy mayor de edad <input type="checkbox" name="legalAge" id="legalAge" required></div>
+                        <br>
+                        <div>Deseas recibir información <input type="checkbox" name="info" id="info" checked="true">
+                        </div><br>
+                        <div>Aceptar las condiciones de servicio <input type="checkbox" name="conditions"
+                                id="conditions" required></div>
+                    </div>
+                    <br><br>
+                    <div class="buttons">
+                        <input class="buttons" type="reset" value="Borrar"><br>
+                        <input class="buttons" id="submit" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <p>
+            The Bronson's Burguer<br>
+            dirección: c/ La panocha pocha s/n <br>
+            télefono: +242 22 773 0117
+
+        </p>
+    </footer>
+</body>
+
+
+</html>

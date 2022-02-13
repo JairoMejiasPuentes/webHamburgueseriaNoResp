@@ -1,0 +1,18 @@
+p a{ 
+    text-decoration: none;
+}
+
+h1 .aviso{
+    color:red;
+}
+
+.aviso{
+    color:yellow;
+}
+#product{
+    font-size: 50px;
+}
+
+h1 + h2{
+    color: red;
+}
